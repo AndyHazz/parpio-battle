@@ -439,7 +439,9 @@ window.onload = () => {
     let sp = document.createElement("span");
     sp.innerText = units_info[k].name;
     let ip = document.createElement("input");
-    ip.type = "number";
+    ip.type = "range";
+    ip.min = 0;
+    ip.max = 100;
     ip.value = 0;
     div.appendChild(sp);
     div.appendChild(ip);
