@@ -447,7 +447,7 @@ window.onload = () => {
     ip.value = 0;
     let op = document.createElement("output");
     op.id = "output_" + units_info[k].name;
-    ip.onInput = op.id + ".value = " ip.id + ".value"
+    ip.onInput = op.id + ".value = " + ip.id + ".value"
     div.appendChild(sp);
     div.appendChild(ip);
     div.appendChild(op);
