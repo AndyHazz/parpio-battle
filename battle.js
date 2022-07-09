@@ -440,11 +440,17 @@ window.onload = () => {
     sp.innerText = units_info[k].name;
     let ip = document.createElement("input");
     ip.type = "range";
+    ip.id = "input_" + units_info[k].name;
+    ip.onInput = op.id + ".value = " ip.id + ".value"
     ip.min = 0;
     ip.max = 100;
     ip.value = 0;
+    let op = document.createElement("output");
+    op.id = "output_" + units_info[k].name;
+    ip.onInput = op.id + ".value = " ip.id + ".value"
     div.appendChild(sp);
     div.appendChild(ip);
+    div.appendChild(op);
     if (units_info[k].player) player_div.appendChild(div);
     else enemy_div.appendChild(div);
     ui_lookup[k] = ip;
