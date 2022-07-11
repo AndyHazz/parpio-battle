@@ -44,12 +44,14 @@ h1 {
     text-align: center;
     background: saddlebrown;
     margin: 0.25em 1em 0em 1em;
+    font-family: 'Sriracha', cursive;
     font-size: 1em;
+    font-weight: bold;
 }
 
 .unitEntry input:focus {
   background: burlywood;
-  color: saddlebrown;
+  color: black;
 }
 
 #battle {

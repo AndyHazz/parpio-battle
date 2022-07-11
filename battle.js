@@ -450,6 +450,7 @@ window.onload = () => {
     let ip = document.createElement("input");
     ip.type = "number";
     ip.value = 0;
+    ip.addEventListener("click", selectMe);
     div.appendChild(ip);
     div.appendChild(sp);
     if (units_info[k].player) player_div.appendChild(div);
@@ -458,6 +459,10 @@ window.onload = () => {
   });
   // doBattle(forces_mine, forces_theirs, 1000);
 };
+
+function selectMe(event) {
+  this.select();
+}
 
 const battle = () => {
   let rounds = parseInt(ui_lookup.rounds.value);
