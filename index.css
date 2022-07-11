@@ -3,6 +3,7 @@
 body {
   font-family: 'Sriracha', cursive;
   background-color: burlywood;
+  font-weight: bold;
 }
 
 h1 {
@@ -34,15 +35,15 @@ h1 {
 
 
 .unitEntry output {
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
     border-radius: 50%;
     color: #fff;
     text-align: center;
     background: saddlebrown;
     margin: 0em 1em 0em 1em;
-    font-size: 0.6em;
+    font-size: 0.8em;
 }
 
 #battle {
@@ -62,12 +63,14 @@ button {
   display: inline-block;
   font-family: 'Sriracha', cursive;
   border: none;
-  padding: 1rem 2rem;
-  margin: 0;
+  padding: 0rem 2rem;
+  border-radius: 0.2em;
+  border: 3px solid darkred;
+  margin: 0.5em;
   text-decoration: none;
-  background: saddlebrown;
+  background: #b00b0b;
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 2rem;
   cursor: pointer;
   text-align: center;
   transition: background 250ms ease-in-out, 
@@ -78,8 +81,8 @@ button {
 
 button:hover,
 button:focus {
-  background: darkred;
-  transform: scale(1.1);
+  background: red;
+  transform: scale(1);
 }
 
 button:focus {
@@ -89,5 +92,94 @@ button:focus {
 }
 
 button:active {
-  transform: scale(0.5);
+  transform: scale(0.8);
 }
+
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 10px 0;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 15px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #E6D4A5;
+  border-radius: 4px;
+  border: 1px solid #000000;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000;
+  border: 3px solid #633F08;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  background: #A8661B;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -9.5px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #E6D4A5;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 15px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #E6D4A5;
+  border-radius: 4px;
+  border: 1px solid #000000;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000;
+  border: 3px solid #633F08;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  background: #A8661B;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 15px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #7e4101;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type=range]::-ms-fill-upper {
+  background: #E6D4A5;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type=range]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 1px 1px 1px #000000;
+  border: 3px solid #633F08;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  background: #A8661B;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #7e4101;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #E6D4A5;
+}
+
