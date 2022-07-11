@@ -1,9 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+body {
+  font-family: 'Sriracha', cursive;
+  background-color: burlywood;
+}
+
+h1 {
+  margin:0em;
+}
+
 #town {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  
+  align-items:baseline;
+  justify-content: center;
+  border: 2px solid saddlebrown;
+  background-color: #fff;
+  border-radius: 1em;
+  padding:1em;
+  margin: 1em;
+}
+
+.unitList {
+  margin: 1em;
 }
 
 .unitEntry {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+}
+
+
+.unitEntry output {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    background: saddlebrown;
+    margin: 0em 1em 0em 1em;
+    font-size: 0.6em;
+}
+
+#battle {
+  border: 2px solid saddlebrown;
+  background-color: #fff;
+  border-radius: 1em;
+  padding:1em;
+  margin: 1em;
+  text-align: center;
+}
+
+.hidden {
+  display:none;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  background: saddlebrown;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, 
+              transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+  background: darkred;
+}
+
+button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+
+button:active {
+  transform: scale(0.99);
 }

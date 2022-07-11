@@ -8,11 +8,13 @@
 
 <body>
     <div id="town"></div>
-    <div>
-        Rounds: <input id="rounds" type="number" value="1000" />
+    <div id="battle">
+        <div class="hidden">
+            Rounds: <input id="rounds" type="number" value="1000" />
+        </div>
+        <button onclick="battle()">Battle!</button>
+        <div id="results"></div>
     </div>
-    <button onclick="battle()">Battle!</button>
-    <div id="results"></div>
 </body>
 
 </html>
