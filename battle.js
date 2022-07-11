@@ -448,17 +448,9 @@ window.onload = () => {
     let sp = document.createElement("span");
     sp.innerText = units_info[k].name;
     let ip = document.createElement("input");
-    ip.type = "range";
-    ip.id = "input_" + units_info[k].name;
-    ip.min = 0;
-    ip.max = 100;
+    ip.type = "number";
     ip.value = 0;
-    let op = document.createElement("output");
-    op.id = "output_" + units_info[k].name;
-    op.value = "0"
-    ip.addEventListener("input", updateOutput);
     div.appendChild(ip);
-    div.appendChild(op);
     div.appendChild(sp);
     if (units_info[k].player) player_div.appendChild(div);
     else enemy_div.appendChild(div);
@@ -466,10 +458,6 @@ window.onload = () => {
   });
   // doBattle(forces_mine, forces_theirs, 1000);
 };
-
-function updateOutput(event) {
-  this.nextElementSibling.value = this.value;
-}
 
 const battle = () => {
   let rounds = parseInt(ui_lookup.rounds.value);
